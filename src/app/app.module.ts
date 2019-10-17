@@ -13,12 +13,12 @@ import { AppComponent } from "./app.component";
 import { AuthenticationService } from "./_services/authentication.service";
 import { UserService } from "./_services/user.service";
 import { AdminComponent } from "./admin/admin.component";
-//import { AssistanceComponent } from "./assistance/assistance.component";
+import { AssistanceComponent } from "./assistance/assistance.component";
 import { HomeComponent } from "./home/home.component";
-//import { IncidentComponent } from "./incident/incident.component";
+import { IncidentComponent } from "./incident/incident.component";
 import { LoginComponent } from "./login/login.component";
-//import { PenTestComponent } from "./pen-test/pen-test.component";
-//import { QuickCheckComponent } from "./quick-check/quick-check.component";
+import { PenTestComponent } from "./pen-test/pen-test.component";
+import { QuickCheckComponent } from "./quick-check/quick-check.component";
 
 @NgModule({
   imports: [
@@ -30,12 +30,12 @@ import { LoginComponent } from "./login/login.component";
   declarations: [
     AppComponent,
     AdminComponent,
-    //AssistanceComponent,
+    AssistanceComponent,
     HomeComponent,
-    //IncidentComponent,
+    IncidentComponent,
     LoginComponent,
-    //PenTestComponent,
-    //QuickCheckComponent
+    PenTestComponent,
+    QuickCheckComponent
   ],
   bootstrap: [AppComponent],
   providers: [

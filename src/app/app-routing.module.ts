@@ -7,10 +7,10 @@ import { AdminComponent } from "./admin";
 import { LoginComponent } from "./login";
 import { AuthGuard } from "./_helpers";
 import { Role } from "./_models";
-//import { IncidentComponent } from "./incident";
-//import { AssistanceComponent } from "./assistance";
-//import { PenTestComponent } from "./pen-test";
-//import { QuickCheckComponent } from "./quick-check";
+import { IncidentComponent } from "./incident";
+import { AssistanceComponent } from "./assistance";
+import { PenTestComponent } from "./pen-test";
+import { QuickCheckComponent } from "./quick-check";
 
 const routes: Routes = [
   {
@@ -29,7 +29,7 @@ const routes: Routes = [
     component: LoginComponent,
     canActivate: [AuthGuard]
   },
-  /*{
+  {
     path: "incident",
     component: IncidentComponent
   },
@@ -44,7 +44,7 @@ const routes: Routes = [
   {
     path: "quick-check",
     component: QuickCheckComponent
-  },*/
+  },
 
   // otherwise redirect to home
   { path: "**", redirectTo: "" }
