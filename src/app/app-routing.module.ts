@@ -31,23 +31,19 @@ const routes: Routes = [
   },
   {
     path: "incident",
-    component: IncidentComponent,
-    canActivate: [AuthGuard]
+    component: IncidentComponent
   },
   {
     path: "assistance",
-    component: AssistanceComponent,
-    canActivate: [AuthGuard]
+    component: AssistanceComponent
   },
   {
     path: "pen-test",
-    component: PenTestComponent,
-    canActivate: [AuthGuard]
+    component: PenTestComponent
   },
   {
     path: "quick-check",
-    component: QuickCheckComponent,
-    canActivate: [AuthGuard]
+    component: QuickCheckComponent
   },
 
   // otherwise redirect to home
