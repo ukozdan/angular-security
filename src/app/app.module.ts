@@ -6,7 +6,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 // used to create fake backend
 import { fakeBackendProvider } from "./_helpers";
 
-import { appRoutingModule } from "./app.routing";
+import { AppRoutingModule } from "./app-routing/app-routing.module";
 import { JwtInterceptor, ErrorInterceptor } from "./_helpers";
 
 import { AppComponent } from "./app.component";
@@ -26,7 +26,7 @@ import { QuickCheckComponent } from "./quick-check/quick-check.component";
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    appRoutingModule
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
